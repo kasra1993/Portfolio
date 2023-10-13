@@ -1,6 +1,6 @@
 import React from "react";
 import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import { easeInOut, motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
@@ -18,7 +18,11 @@ const ServiceCard = ({ index, title, icon }) => {
         >
           <img src={icon} alt={title} className="w-16 h-16 object-contain" />
           <h3 className="text-white text-[20px] font-bold text-center">
-            {title}
+            {title.map((t, index) => (
+              <p key={index}>
+                {t} <br />{" "}
+              </p>
+            ))}
           </h3>
         </div>
       </motion.div>
@@ -26,25 +30,89 @@ const ServiceCard = ({ index, title, icon }) => {
   );
 };
 const About = () => {
+  const onCvButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("../../public/Mahsouli_Kasra_CV.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Mahsouli_Kasra_CV.pdf";
+        alink.click();
+      });
+    });
+  };
+  const onReferralButtonClick = () => {
+    // using Java Script method to get PDF file
+    fetch("../../public/Mahsouli_Kasra_Referral.pdf").then((response) => {
+      response.blob().then((blob) => {
+        // Creating new object of PDF file
+        const fileURL = window.URL.createObjectURL(blob);
+        // Setting various property values
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Mahsouli_Kasra_Referral.pdf";
+        alink.click();
+      });
+    });
+  };
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={`${styles.sectionSubText} font-TuskerGrotesk`}>
+          Introduction
+        </p>
+        <div id="scroll-container">
+          <h2 className={styles.sectionHeadText} id="scroll-text">
+            OVERVIEW
+          </h2>
+        </div>
       </motion.div>
+      {/* <motion.h1
+        animate={{ x: [0, 1300] }}
+        transition={{
+          ease: easeInOut,
+          repeat: Infinity,
+          duration: 5,
+        }}
+        initial={{ x: [-100, -200, -300] }}
+        // whileHover={{ transition: -200 }}
+        // exit={{ x: "-100vh", opacity: 0 }}
+      >
+        Animation made easy with Framer Motion
+      </motion.h1> */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-2-3xl leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-2-3xl leading-[30px]   "
       >
         Innovative , task-driven professional with 5+ years of experience in web
-        design and development across diverse industries. Equipped with a record
-        of success in consistently identifying and providing the technological
-        needs of companies through ingenious innovation. Proficient in
-        developing database , creating user interfaces , writing and testing
-        codes, troubleshooting simple/complex issues , and implementing new
-        features based on user feedback
+        design and development across diverse industries. Motivated to learn new
+        technologies, Proficient at creating user interfaces , writing and
+        testing codes, troubleshooting simple/complex issues, using CI/CD
+        pipeline tools and systems along with working with major cloud based
+        service providers such as AWS and Azure.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
+      <div className="mt-8 flex flex-wrap justify-baseline gap-4">
+        <a
+          href="/#"
+          className="block w-full border border-white  rounded px-12 py-3 text-sm font-medium text-[#e5dada] shadow  focus:outline-none focus:ring hover:text-orange-400 active:text-orange-400 sm:w-auto"
+          onClick={onCvButtonClick}
+        >
+          {" "}
+          Download CV
+        </a>
+        <a
+          href="/#"
+          className="block w-full border border-white  rounded px-12 py-3 text-sm font-medium text-[#e5dada] shadow hover:text-orange-400 focus:outline-none focus:ring active:text-orange-400 sm:w-auto"
+          onClick={onReferralButtonClick}
+        >
+          {" "}
+          Download Referral letter
+        </a>
+      </div>
+      <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

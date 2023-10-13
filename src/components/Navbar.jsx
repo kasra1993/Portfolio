@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { styles } from "../styles";
 import { navLinks } from "../constants";
-import { logo, menu, close } from "../assets";
+import { chiliscript, menu, close } from "../assets";
 
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -13,7 +13,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      if (scrollTop > 100) {
+      if (scrollTop > 35) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -36,17 +36,13 @@ const Navbar = () => {
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
           to="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 w-32 h-20"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <img
-            src="src/assets/kasramahsoulilogo.png"
-            alt="logo"
-            className="w-20 h-20 object-contain"
-          />
+          <img src={chiliscript} alt="logo" className="object-contain" />
           {/* <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Kasra Mahsouli &nbsp;
             <span className="sm:block hidden"> | Js Professional</span>

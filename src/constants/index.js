@@ -43,19 +43,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: `Reactjs  Nextjs`,
+    title: ["Reactjs", "Nextjs"],
     icon: web,
   },
   {
-    title: "Tailwindcss Bootstrap Material UI  Sass",
+    title: ["Tailwindcss", "Bootstrap", "Material UI", "Sass"],
     icon: creator,
   },
   {
-    title: "Nodejs  Expressjs",
+    title: ["Nodejs", "Expressjs"],
     icon: backend,
   },
   {
-    title: "Mongodb  Sql",
+    title: ["Mongodb", "Sql"],
     icon: mobile,
   },
 ];
@@ -118,60 +118,61 @@ const technologies = [
 const experiences = [
   {
     title: "Mern Stack",
-    company_name: "Security Camera Vendor / Anabin Securities",
+    company_name: "Security Camera Vendor / Anabon Securities inc.",
     icon: Freelancer,
     iconBg: "#383E56",
-    date: "2023 - Present",
+    date: "March, 2023 - Present (Ongoing Project)",
     points: [
-      "Developing websites using various frameworks and programming Technologies including Typescript , Reactjs , Nodejs , Nextjs(v13) , Vite / Webpack , Mongodb , Expressjs , ReactQuery , Jest ,  Websocket , SocketIo , Mongoose , Redux Toolkit , Docker , Git / Github , Threejs , React Fiber , Framer Motion ",
-      "conducting market research and performing data analysis",
-      "Experience in Firebase and Vercel for Hosting Static Developments",
+      "Developed websites using various frameworks and programming Technologies including Typescript, Reactjs, Nodejs, Nextjs(v13), Vite / Webpack, Mongodb, Expressjs, ReactQuery, Jest,  Websocket, SocketIo, Mongoose, Redux Toolkit, Docker, Git / Github, Threejs, React Fiber, Framer Motion ",
+      "Used Jenkins to automate build and deployment that reduced human error and sped up production processes.",
+      "Used github actions as CI/CD pipeline along with Docker Compose for container managment tool ",
       "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Staying up-to-date with emerging trends and technologies in web development",
-      "Experiencing OOP and design patterns and Test-Driven Development",
+      "Worked with development, testing and deployment tools such as  Git, Github Actions, Gitlab CI CD, Docker, Docker compose and Kubernetes based on project needs and scale .",
+      "Experience in using Nagios and Prometheus as Server monitoring tools and Terraform and Ansible for infrastructure setup and configuration.",
       "Increasing performance and engagement via using PWA ",
     ],
   },
   {
     title: "Full stack Developer",
-    company_name: "Myzel",
+    company_name: "Myzel inc.",
     icon: myzelLogo,
     iconBg: "#E6DEDD",
-    date: "Jan 2020 - 2023",
+    date: "January, 2020 - March, 2023",
     points: [
-      "Completely changing the User interface along with integrating new functionalities both in Frontside and on the server side.",
+      "The transformation from Junior Frontend Developer to Junior Fullstacker with access to handle the Automation process of CI CD pipelines on Linux VPS Server and AWS Cloud Server.",
+      "Completely changed the User interface along with integrating new functionalities both in Frontside and on the server side.",
       "Conduct and participate in project planning & scheduling, design discussions, and provide assistance during testing.",
       "Optimized the Class Component code to the highest universal MERN standards",
-      "Experienced Working with cloud technologies such as AWS and Azure.",
-      "Implementing and managing CI/CD pipelines",
-      "Implementing of RESTful API design and development.",
+      "Reduced pages load times from 7-10s to 3-7s by implementing Server side Rendering , Storage Optimization and memoization .",
+      "Worked on Continuous Delivery system that led to improvement in ship time by 25%.",
+      "Reduced IT Department costs by 30% by eliminating unnecessary servers , minimizing workload put upon remaining servers.",
     ],
   },
   {
     title: "Junior Frontend Developer",
-    company_name: "HillzDealer Co",
+    company_name: "HillzDealer inc.",
     icon: Hillzlogo,
     iconBg: "#383E56",
-    date: "2019 - 2020",
+    date: "July, 2019 - January, 2020",
     points: [
-      "Meeting with the development team to discuss user interface ideas and applications.",
-      "Developing and implementing highly responsive user interface components using react concepts.",
-      "Documenting application changes and developing updates using version control system of GIT.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Met with the development team to discuss user interface ideas and applications.",
+      "Developed and implementing highly responsive user interface components using react concepts.",
+      "Documented application changes and developing updates using version control system of GIT.",
+      "Participated in code reviews and providing constructive feedback to other developers.",
       "Design and develop new custom components to meet project requirements.",
     ],
   },
   {
     title: "Frontend Developer Internship",
-    company_name: "Chaadko CO",
+    company_name: "Chaadko inc.",
     icon: Hillzlogo,
     iconBg: "#E6DEDD",
-    date: " 2018 -  2019",
+    date: " Augest, 2018 -  April, 2019",
     points: [
-      "Build reusable components and front-end libraries for future use",
-      "Working with CSS (Bootstrap)",
-      "responsible for the design and implementation of user interfaces (UIs) and UI components using React, a front-end JavaScript library.",
-      "Address and improve any technical issues",
+      "Built reusable components and front-end libraries for future use",
+      "Worked with CSS (Bootstrap)",
+      "Responsible for the design and implementation of user interfaces (UIs) and UI components using React, a front-end JavaScript library.",
+      "Addressed and improved any technical issues",
     ],
   },
 ];
@@ -179,7 +180,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "With Mr Mahsouli's help, we were able to increase the functionality of our website dramatically while cutting our costs. Our website is much more easy to use, has tons of more features than before and is incredibly easy to maintain.",
+      "Kasra has done a fantastic job overall. Throughout the entire process , his skills began to evolve and more responsibilities were assigned to him. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.",
     name: "Mr Sharifi",
     designation: "CFO",
     company: "Myzel (Raamak)",
@@ -187,7 +188,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "We had high expectations for the visual look and functionality of Sweetheartmotor.com and they met and exceeded our expectations. We look forward to working with them in the near future on another project.",
+      "Mr Mahsouli is an incredibly talented developer but what really made him stand out was his work ethic and steady approach. Time after time, and without us asking, he added enhancements and improvements that resulted in a better end product for us and our clients.",
     name: "Mr Riahi",
     designation: "CEO",
     company: "HillzDealer",
@@ -195,7 +196,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "It was a pleasure working with Mr mahsouli , his Professionalism and the ability to stick to a specific deadline given the amount of work , exceeded our expectations in every way .  ",
+      "It was a pleasure working with Mr mahsouli , his Professionalism and the ability to stick to a specific deadline given the amount of work , exceeded our expectations in every way .",
     name: "Fred Lim",
     designation: "Regional Business Development Manager",
     company: "Anabon Securities",

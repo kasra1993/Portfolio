@@ -6,6 +6,12 @@ import { ComputersCanvas } from "./canvas";
 const Hero = () => {
   return (
     <section className={`relative w-full h-screen mx-auto`}>
+      {/* <button
+        className="bg-white text-black p-4 rounded-lg"
+        onClick={() => formRef.current.scrollIntoView()}
+      >
+        GET IN TOUCH
+      </button> */}
       <div
         className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
@@ -16,14 +22,14 @@ const Hero = () => {
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF]">Kasra Mahsouli</span>
+            Hi, I'm <span className="text-[#915EFF] ">Kasra Mahsouli</span>
           </h1>
           <p className={`${styles.heroSubText}  text-white-100`}>
-            and i'm a full stack developer <br className="sm:block hidden" />
+            Welcome to my portfolio . I'm a web developer, specializing in MERN
+            stack. <br className="sm:block hidden" />
           </p>
         </div>
       </div>
-
       <ComputersCanvas />
 
       <div className="absolute xs:bottom-20 bottom-32  w-1/4 flex justify-center items-center">

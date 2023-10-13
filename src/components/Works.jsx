@@ -5,6 +5,7 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ProjectCard = ({
   index,
@@ -18,17 +19,23 @@ const ProjectCard = ({
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-full"
       >
         <div
           className="relative w-full h-[230px]"
           onClick={() => window.open(source_code_link, "_blank")}
         >
-          <img
+          <LazyLoadImage
             src={image}
+            // width={600} height={400}
             alt={name}
             className="w-full h-full object-cover rounded-2xl"
           />
+          {/* <img
+            src={image}
+            alt={name}
+            className="w-full h-full object-cover rounded-2xl"
+          /> */}
           {/* <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center courser-pointer">
               <img
@@ -59,8 +66,14 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My Work</p>
-        <h2 className={styles.sectionHeadText}>Projects</h2>
+        <p className={`${styles.sectionSubText} font-TuskerGrotesk`}>
+          Portfolio of work
+        </p>
+        <div id="scroll-container">
+          <h2 className={styles.sectionHeadText} id="scroll-text">
+            PROJECTS
+          </h2>
+        </div>
       </motion.div>
       <div className="w-full flex">
         <motion.p
@@ -68,8 +81,8 @@ const Works = () => {
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           These are just some of my most recent projects that i have had the
-          privillage of developing either for companies or Employers with 100%
-          satisfaction rate.
+          privillage of developing either for companies or Employers with
+          highest satisfaction rate.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7">

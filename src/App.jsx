@@ -10,6 +10,7 @@ import {
   Tech,
   Works,
   StarsCanvas,
+  Footer,
 } from "./components";
 const App = () => {
   return (
@@ -17,22 +18,23 @@ const App = () => {
       <div className="relative z-0 bg-primary">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <CookieConsent
+          {/* <CookieConsent
             debug={true}
             style={{ background: "rgb(5 8 22 / var(--tw-bg-opacity))" }}
           >
             This site uses cookies.
-          </CookieConsent>
+          </CookieConsent> */}
           <Hero />
         </div>
         <About />
-        <Experience />
         <Works />
+        <Experience />
         <Feedbacks />
-        <div>
+        <div className="relative z-0">
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

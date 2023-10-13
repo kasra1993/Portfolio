@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
+@import url("./fonts/stylesheet.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -206,4 +206,42 @@
 #rcc-confirm-button {
   border-radius: 20px !important;
   padding: 10px;
+}
+
+#scroll-container {
+  border-bottom: 3px solid white;
+  border-top: 3px solid white;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 100%;
+}
+
+#scroll-text {
+  text-align: left;
+
+  /* animation properties */
+  /* -moz-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%); */
+
+  -moz-animation: my-animation 5s linear infinite;
+  -webkit-animation: my-animation 5s linear infinite;
+  animation: my-animation 5s cubic-bezier(0.435, 0.535, 0.8, 0.175) infinite;
+  /* 
+  transition: all 2000ms cubic-bezier(0.000, 0.775, 1.000, 0.135);
+
+  transition-timing-function: cubic-bezier(0.000, 0.775, 1.000, 0.135); custom */
+}
+
+@keyframes my-animation {
+  from {
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -moz-transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
 }

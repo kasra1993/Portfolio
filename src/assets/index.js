@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -31,11 +30,11 @@ import myzelImage from "./myzelImage.png";
 // import jobit from "./jobit.png";
 // import tripguide from "./tripguide.png";
 import Freelancer from "./company/Freelancer.png";
+
 import Hillzlogo from "./company/Hillzlogo.svg";
 import User from "./User.png";
-
+import chiliscript from "./chiliscript-logo.svg";
 export {
-  logo,
   backend,
   creator,
   mobile,
@@ -64,4 +63,5 @@ export {
   Freelancer,
   myzelImage,
   User,
+  chiliscript,
 };
