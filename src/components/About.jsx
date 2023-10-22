@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import MahsouliCV from "/src/Mahsouli_Kasra_CV.pdf";
+import MahsouliReferral from "/src/Mahsouli_Kasra_Referral.pdf";
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
@@ -30,34 +32,6 @@ const ServiceCard = ({ index, title, icon }) => {
   );
 };
 const About = () => {
-  const onCvButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("../../public/Mahsouli_Kasra_CV.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Mahsouli_Kasra_CV.pdf";
-        alink.click();
-      });
-    });
-  };
-  const onReferralButtonClick = () => {
-    // using Java Script method to get PDF file
-    fetch("../../public/Mahsouli_Kasra_Referral.pdf").then((response) => {
-      response.blob().then((blob) => {
-        // Creating new object of PDF file
-        const fileURL = window.URL.createObjectURL(blob);
-        // Setting various property values
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Mahsouli_Kasra_Referral.pdf";
-        alink.click();
-      });
-    });
-  };
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -70,19 +44,7 @@ const About = () => {
           </h2>
         </div>
       </motion.div>
-      {/* <motion.h1
-        animate={{ x: [0, 1300] }}
-        transition={{
-          ease: easeInOut,
-          repeat: Infinity,
-          duration: 5,
-        }}
-        initial={{ x: [-100, -200, -300] }}
-        // whileHover={{ transition: -200 }}
-        // exit={{ x: "-100vh", opacity: 0 }}
-      >
-        Animation made easy with Framer Motion
-      </motion.h1> */}
+
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-2-3xl leading-[30px]   "
@@ -96,21 +58,40 @@ const About = () => {
       </motion.p>
       <div className="mt-8 flex flex-wrap justify-baseline gap-4">
         <a
+          href={MahsouliCV}
+          download="Mahsouli_Kasra_CV"
+          target="_blank"
+          rel="noreferrer"
+          className="block w-full border border-white  rounded px-12 py-3 text-sm font-medium text-[#e5dada] shadow  focus:outline-none focus:ring hover:text-orange-400 active:text-orange-400 sm:w-auto"
+        >
+          download CV
+        </a>
+        <a
+          href={MahsouliReferral}
+          download="Mahsouli_Kasra_Referral"
+          target="_blank"
+          rel="noreferrer"
+          className="block w-full border border-white  rounded px-12 py-3 text-sm font-medium text-[#e5dada] shadow hover:text-orange-400 focus:outline-none focus:ring active:text-orange-400 sm:w-auto"
+        >
+          download Referral
+        </a>
+
+        {/* <a
           href="/#"
           className="block w-full border border-white  rounded px-12 py-3 text-sm font-medium text-[#e5dada] shadow  focus:outline-none focus:ring hover:text-orange-400 active:text-orange-400 sm:w-auto"
           onClick={onCvButtonClick}
         >
           {" "}
           Download CV
-        </a>
-        <a
+        </a> */}
+        {/* <a
           href="/#"
           className="block w-full border border-white  rounded px-12 py-3 text-sm font-medium text-[#e5dada] shadow hover:text-orange-400 focus:outline-none focus:ring active:text-orange-400 sm:w-auto"
           onClick={onReferralButtonClick}
         >
           {" "}
           Download Referral letter
-        </a>
+        </a> */}
       </div>
       <div className="mt-20 flex flex-wrap gap-10 justify-center">
         {services.map((service, index) => (

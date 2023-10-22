@@ -30,7 +30,9 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <div className="h-1/2 sm:h-full  w-full  sm:static absolute sm:top-auto top-40 ">
+        <ComputersCanvas />
+      </div>
 
       <div className="absolute xs:bottom-20 bottom-32  w-1/4 flex justify-center items-center">
         <a href="#about">
