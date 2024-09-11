@@ -22,8 +22,8 @@ import {
   Hillzlogo,
   Freelancer,
   myzelLogo,
-  myzelImage,
   User,
+  dijunoImage,
 } from "../assets";
 
 export const navLinks = [
@@ -51,12 +51,12 @@ const services = [
     icon: creator,
   },
   {
-    title: ["Nodejs", "Expressjs"],
-    icon: backend,
+    title: ["Typescript", "Javascript"],
+    icon: mobile,
   },
   {
-    title: ["Mongodb", "Sql"],
-    icon: mobile,
+    title: ["Nodejs", "Expressjs", "Mongodb", "Sql"],
+    icon: backend,
   },
 ];
 
@@ -117,35 +117,43 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Mern Stack",
-    company_name: "Security Camera Vendor / Anabon Securities inc.",
+    title: "Senior Frontend Developer (Remote)",
+    company_name: "Interrodata Ltd. (Dijuno)",
     icon: Freelancer,
     iconBg: "#383E56",
-    date: "March, 2023 - Present (Ongoing Project)",
+    date: "January, 2024 - Present",
     points: [
-      "Developed websites using various frameworks and programming Technologies including Typescript, Reactjs, Nodejs, Nextjs(v13), Vite / Webpack, Mongodb, Expressjs, ReactQuery, Jest,  Websocket, SocketIo, Mongoose, Redux Toolkit, Docker, Git / Github, Threejs, React Fiber, Framer Motion ",
-      "Used Jenkins to automate build and deployment that reduced human error and sped up production processes.",
-      "Used github actions as CI/CD pipeline along with Docker Compose for container managment tool ",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Worked with development, testing and deployment tools such as  Git, Github Actions, Gitlab CI CD, Docker, Docker compose and Kubernetes based on project needs and scale .",
-      "Experience in using Nagios and Prometheus as Server monitoring tools and Terraform and Ansible for infrastructure setup and configuration.",
-      "Increasing performance and engagement via using PWA ",
+      "Collaborating closely with backend developers and data scientists to understand data structures and requirements, ensuring seamless integration and accurate representation of data on the front end",
+      "Developing and maintaining React.js applications to efficiently display data-driven charts derived from backend processes, enhancing clients' understanding of their business metrics.",
+      "Collaborating with cross-functional teams in an Agile environment, participating in weekly and bi-monthly meetings to review project progress, discuss challenges, and ensure alignment with company objectives.",
+      "Utilizing a stack comprising Amplitude, Material UI, Fuse.js, Plotly, pptxgen, Redux, and integrating backend technologies such as AWS and Airflow to optimize data visualization and user experience.",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Myzel inc.",
-    icon: myzelLogo,
-    iconBg: "#E6DEDD",
-    date: "January, 2020 - March, 2023",
+    title: "FullStack Developer with Focus on Front",
+    company_name: "Security Camera Vendor / Anabon Securities inc.",
+    icon: Freelancer,
+    iconBg: "#383E56",
+    date: "Aug, 2020 - January 2023",
     points: [
-      "The transformation from Junior Frontend Developer to Junior Fullstacker with access to handle the Automation process of CI CD pipelines on Linux VPS Server and AWS Cloud Server.",
-      "Completely changed the User interface along with integrating new functionalities both in Frontside and on the server side.",
-      "Conduct and participate in project planning & scheduling, design discussions, and provide assistance during testing.",
-      "Optimized the Class Component code to the highest universal MERN standards",
-      "Reduced pages load times from 7-10s to 3-7s by implementing Server side Rendering , Storage Optimization and memoization .",
-      "Worked on Continuous Delivery system that led to improvement in ship time by 25%.",
-      "Reduced IT Department costs by 30% by eliminating unnecessary servers , minimizing workload put upon remaining servers.",
+      "Led the development of dynamic web applications using TypeScript, Next.js (v13), and Node.js, ensuring high performance and scalability. Configured Vite for optimized delivery, and leveraged React Query for efficient data fetching.",
+      "Built and maintained robust backend services with Express.js, MongoDB, and Mongoose, including real-time features us.",
+      "Enhanced user interfaces with Three.js, React Fiber, and Framer Motion, delivering visually immersive and interactive experiences. Implemented testing strategies with Jest for high code quality.",
+    ],
+  },
+  {
+    title: "Fullstack Developer",
+    company_name: "Rierco Rubber Research Company",
+    icon: Freelancer,
+    iconBg: "#E6DEDD",
+    date: "March, 2023 - December, 2023",
+    points: [
+      "Spearheaded a comprehensive overhaul of the user interface, seamlessly integrating new functionalities on both the frontend and server sides to enhance user experience.",
+      "Engaged in project planning, scheduling, and design discussions, actively contributing insights and providing support throughout the testing phase.",
+      "Implemented rigorous optimizations to elevate Class Component code to meet universal MERN standards, ensuring optimal performance and maintainability.",
+      "Significantly improved page load times from 7-10 seconds to 3-7 seconds by employing advanced techniques such as server-side rendering, storage optimization, and memoization.",
+      "Collaborated on the development and implementation of a Continuous Delivery system, resulting in a 25% enhancement in shipment efficiency.",
+      "Achieved a remarkable 30% reduction in IT Department costs by strategically eliminating unnecessary servers and redistributing workloads to optimize resource utilization.",
     ],
   },
   {
@@ -153,26 +161,13 @@ const experiences = [
     company_name: "HillzDealer inc.",
     icon: Hillzlogo,
     iconBg: "#383E56",
-    date: "July, 2019 - January, 2020",
+    date: "February, 2018 - June, 2020",
     points: [
-      "Met with the development team to discuss user interface ideas and applications.",
-      "Developed and implementing highly responsive user interface components using react concepts.",
-      "Documented application changes and developing updates using version control system of GIT.",
-      "Participated in code reviews and providing constructive feedback to other developers.",
-      "Design and develop new custom components to meet project requirements.",
-    ],
-  },
-  {
-    title: "Frontend Developer Internship",
-    company_name: "Chaadko inc.",
-    icon: Hillzlogo,
-    iconBg: "#E6DEDD",
-    date: " Augest, 2018 -  April, 2019",
-    points: [
-      "Built reusable components and front-end libraries for future use",
-      "Worked with CSS (Bootstrap)",
-      "Responsible for the design and implementation of user interfaces (UIs) and UI components using React, a front-end JavaScript library.",
-      "Addressed and improved any technical issues",
+      "Collaborated with the development team to brainstorm and refine user interface concepts and applications, ensuring alignment with project objectives and user needs.",
+      "Designed and implemented highly responsive user interface components using React concepts, enhancing user experience and interface functionality.",
+      "Documented application changes and managed updates utilizing Git version control system, ensuring accurate tracking of modifications and facilitating seamless collaboration among team members.",
+      "Engaged in code reviews, offering valuable insights and constructive feedback to fellow developers, fostering a collaborative and quality-driven development environment.",
+      "Designed and developed bespoke components to address specific project requirements, contributing to the creation of tailored solutions that align with project goals and user expectations.",
     ],
   },
 ];
@@ -180,15 +175,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "Kasra has done a fantastic job overall. Throughout the entire process , his skills began to evolve and more responsibilities were assigned to him. It’s obvious he takes tremendous pride in his work, and I wouldn’t hesitate to recommend or work with him again.",
-    name: "Mr Sharifi",
-    designation: "CFO",
-    company: "Myzel (Raamak)",
+      " I am confident that Mr. Kasra Mahsouli's combination of technical expertise, professionalism, and strong interpersonal skills will make him an invaluable asset to any team. I highly recommend him for any opportunity he pursues and believe that his future is very bright in the field of web development.",
+    name: "Mr Amin Azarbadegan",
+    designation: "Director",
+    company: "Bentoak Systems (Interrodata / Dijuno)",
     image: User,
   },
   {
     testimonial:
-      "Mr Mahsouli is an incredibly talented developer but what really made him stand out was his work ethic and steady approach. Time after time, and without us asking, he added enhancements and improvements that resulted in a better end product for us and our clients.",
+      "Kasra's commitment to excellence is evident in his work ethic and the quality of his deliverables, I highly recommend Kasra for any development project.",
     name: "Mr Riahi",
     designation: "CEO",
     company: "HillzDealer",
@@ -196,7 +191,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "It was a pleasure working with Mr mahsouli , his Professionalism and the ability to stick to a specific deadline given the amount of work , exceeded our expectations in every way .",
+      "It was a pleasure working with Mr Mahsouli, his Professionalism and the ability to stick to a specific deadline given the amount of work, exceeded our expectations in every way.",
     name: "Fred Lim",
     designation: "Regional Business Development Manager",
     company: "Anabon Securities",
@@ -248,7 +243,7 @@ const projects = [
     source_code_link: "https://anabon.com/",
   },
   {
-    name: "Raamak (Myzel Department)",
+    name: "Interrodata Ltd. (Dijuno product)",
     description:
       "An Ecommerce Mern based platform enabling users to select and purchase goods and have them delievered",
     tags: [
@@ -265,8 +260,8 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: myzelImage,
-    source_code_link: "https://dev.myzel.ir",
+    image: dijunoImage,
+    source_code_link: "https://www.dijuno.ai/",
   },
 ];
 

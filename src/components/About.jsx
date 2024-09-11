@@ -49,12 +49,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-2-3xl leading-[30px]   "
       >
-        Innovative , task-driven professional with 5+ years of experience in web
-        design and development across diverse industries. Motivated to learn new
-        technologies, Proficient at creating user interfaces , writing and
-        testing codes, troubleshooting simple/complex issues, using CI/CD
-        pipeline tools and systems along with working with major cloud based
-        service providers such as AWS and Azure.
+        Experienced web developer with over 7 years of industry experience,
+        skilled in designing and developing websites across various sectors.
+        Dedicated to continuous learning and adapting to new technologies.
+        Proficient in creating user-friendly interfaces, writing and testing
+        code, and resolving technical issues.
       </motion.p>
       <div className="mt-8 flex flex-wrap justify-baseline gap-4">
         <a

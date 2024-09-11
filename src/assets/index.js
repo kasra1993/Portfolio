@@ -24,7 +24,7 @@ import Anabon from "./tech/Anabon.png";
 import myzelLogo from "./company/myzelLogo.svg";
 
 import Sweetheart from "./tech/Sweetheart.png";
-import myzelImage from "./myzelImage.png";
+import dijunoImage from "./dijunoImage.png";
 
 // import carrent from "./carrent.png";
 // import jobit from "./jobit.png";
@@ -61,7 +61,7 @@ export {
   Sweetheart,
   Hillzlogo,
   Freelancer,
-  myzelImage,
+  dijunoImage,
   User,
   chiliscript,
 };

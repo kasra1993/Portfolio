@@ -16,17 +16,20 @@ const Hero = () => {
         className={`absolute inset-0 top-[100px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915EFF]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
+          <div className="w-5 h-5 rounded-full bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500" />
+          <div className="w-1 sm:h-80 h-40 bg-gradient-to-b from-blue-500 via-purple-500 to-pink-500" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915EFF] ">Kasra Mahsouli</span>
+            Hi, I'm{" "}
+            <span className="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent ">
+              Kasra Mahsouli
+            </span>
           </h1>
           <p className={`${styles.heroSubText}  text-white-100`}>
-            Welcome to my portfolio . I'm a web developer, specializing in MERN
-            stack. <br className="sm:block hidden" />
+            Welcome to my portfolio showcasing my expertise as a web developer
+            specializing in the MERN stack. <br className="sm:block hidden" />
           </p>
         </div>
       </div>

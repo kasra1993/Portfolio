@@ -83,9 +83,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          These are just some of my most recent projects that i have had the
-          privillage of developing either for companies or Employers with
-          highest satisfaction rate.
+          Explore my diverse range of projects showcasing my expertise and
+          creativity in web development across various industries.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-7 ">
